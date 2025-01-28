@@ -1,6 +1,6 @@
 
-import Cards from "@/components/client/Dashboard/Cards";
-import Chart from "@/components/client/Dashboard/Chart";
+import Cards from "@/components/warehouse/Dashboard/Cards";
+import Chart from "@/components/warehouse/Dashboard/Chart";
 import { SideBar } from "@/components/warehouse/SideBar";
 import React from "react";
 

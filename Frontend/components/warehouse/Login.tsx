@@ -30,7 +30,7 @@ export const Login = () => {
 
     if (res.status == 200) {
       toast.success("Login successful");
-      localStorage.setItem("warehouseowner", email); //hardcoded👀
+      localStorage.setItem("client", email); //hardcoded👀
       router.push("/warehouse");
     }
     else {
