@@ -73,4 +73,3 @@ const PieChart: React.FC<PieChartProps> = ({ data, labels, descriptions, warehou
 };
 
 export default PieChart;
-
