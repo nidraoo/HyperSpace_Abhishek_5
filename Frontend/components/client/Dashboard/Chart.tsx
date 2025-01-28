@@ -3,7 +3,8 @@
 // components/PieChart.tsx
 
 import { Pie } from 'react-chartjs-2';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, TooltipItem } from 'chart.js';
+
 
 // Registering necessary components of Chart.js
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -44,7 +45,7 @@ const PieChart: React.FC<PieChartProps> = ({ data, labels, descriptions, warehou
       tooltip: {
         callbacks: {
           // Tooltip content customization
-          label: (context: any) => {
+          label: (context: TooltipItem<'pie'>) => {
             const index = context.dataIndex;
             return `${labels[index]}: ${data[index]} left in ${warehouses[index]} (${descriptions[index]})`;
           },
